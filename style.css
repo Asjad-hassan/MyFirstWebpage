@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-1 : #6caea8;
+}
+header .navbar ul{list-style-type: none; gap: 3rem;}
+header .navbar ul li a{text-decoration: none; color: black;}
+body,html{
+    width: 100%;
+    height: 100%;
+    font-family: Product Sans, serif;
+}
+header{
+    width: '100%';
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 2rem;
+    align-items: center;
+}
+
+header .navbar ul{
+    display: flex;
+    font-size: 1.5vw;
+}
+header .navbar ul li a {
+    transition: all ease-in-out .5s;
+}
+header .navbar ul li a:hover{
+    color: var(--color-1);
+}
+
+main .section1{
+    background-image: url(https://plus.unsplash.com/premium_photo-1661587357579-8881c1f5bf1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 80vh;
+    /* border: 1px solid red; */
+    margin-inline: auto;
+    /* background-position: center; */
+    background-size: cover;
+    opacity: .75;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-inline: 2rem;
+    border-radius: 10px;
+    
+}
+main .article1 {
+    text-align: center;
+    margin-top: 2rem;
+}
+main .article1 h1{
+    font-size: 2vw;
+}
+main .article1 p{
+    font-size: 4vw;
+    color: var(--color-1);
+    font-weight: 900;
+   
+}
+
+.article2{
+    width: 100%;
+    height: 80vh;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.article2 .card{
+    padding: 1rem;
+    height: 80%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    text-align: justify;
+    transition: all ease-out .5s;
+}
+.article2 .card p{
+    opacity: .8;
+}
+.article2 .card a{
+    text-decoration: none;
+    color: black;
+    transition: all ease-out .5s;
+    opacity: .8;
+}
+.article2 .card a:hover{
+    color: var(--color-1);
+}
+.article2 .card .img{
+    width: 100%;
+    height: 40%;
+   
+}
+.article2 .card .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.article2 .card:hover{
+    background-color: var(--color-1);
+    color: #fff;
+    border-radius: 15px;
+}
+.article2 .card:hover a{
+    color: #fff;
+}
+footer{
+    width: 100%;
+    border: 1px solid var(--color-1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer .fcopy{
+    font-size: 1.5vw;
+}
